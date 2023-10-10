@@ -1,0 +1,98 @@
+#projekte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projekt {
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projekt img {
+    max-width: 80%;
+}
+
+.projekt h2 {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.projekt p {
+    font-size: 16px;
+}
+
+  .conte p {
+    font-size: 16px;
+}
+  
+  .card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px #ffff;
+  }
+  
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .face.back {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .face.back .content h2 {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+
+  .face.front {
+    transition: 1s;
+  }
+  
+  .card:hover .face.front {
+    height: 60px;
+  }
+  
+  .card:hover .face.front b {
+    font-size: 2em;
+  }
+  
+  .face.front {
+    background-color: #11AAFF;
+    border-radius: 15px;
+  }
+
+  .face.front img {
+    max-width: 70%;
+}
+
+    @media (max-width: 1368px) {
+        .projekt {
+            width: 85%;
+        }
+        
+        .projekt h2 {
+            font-size: 16px;
+        }
+        
+        .projekt p {
+            font-size: 12px;
+        }
+    
+        .card {
+            width: 100%;
+        }
+    }

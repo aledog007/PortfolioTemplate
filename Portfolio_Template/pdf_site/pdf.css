@@ -1,0 +1,176 @@
+body,html {
+  padding:0px;
+  margin:0px;
+  font-family: 'Comfortaa', cursive;
+  font-weight:bold;
+  color:#fff;
+  background:rgb(0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+#view {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#mazeContainer {
+  top: 15px;
+  opacity: 0;
+  display: inline-block;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+#mazeContainer #mazeCanvas {
+  margin: 0;
+  display: block;
+  border: solid 2px #fff;
+  height: 400px;
+}
+
+input, select {
+  cursor: pointer;
+  background-color: #333;
+  height: 45px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+}
+
+input:hover, select:hover {
+  background-color: #555;
+}
+
+input:active, select:active {
+  background-color: #111;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+.custom-select {
+  display: inline-block;
+}
+
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 125px center;
+}
+
+#Message-Container {
+  visibility: hidden;
+  color: #fff;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#Message-Container #message {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.content-box {
+  background-color: black; 
+  width: 100vw;
+  padding: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 15px; 
+  max-width: 400px; 
+  text-align: center; 
+}
+
+#page {
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+#page #menu {
+  margin: auto;
+  padding: 10px;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+#page #menu h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+#page #view {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 10px #000 solid;
+  border-radius: 10px;
+}
+
+#instructions {
+  margin-top: 475px;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1368px) {
+  input, select {
+    width: 120px;
+  }
+  .content-box {
+    width: 80%; 
+    max-width: 250px; 
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+}
